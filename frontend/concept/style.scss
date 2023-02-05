@@ -1,0 +1,45 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 20px;
+
+  h1 {
+    text-align: center;
+  }
+
+  form.input {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+
+    input {
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 3px;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      border: 0;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 3px;
+    }
+  }
+
+  form.list {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    grid-gap: 40px;
+
+    input:checked + label {
+      text-decoration: line-through;
+      color: #ccc;
+    }
+  }
+}
