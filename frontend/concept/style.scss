@@ -33,13 +33,23 @@ body {
 
   form.list {
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 30px 1fr 30px;
     align-items: center;
-    grid-gap: 40px;
+    grid-gap: 20px;
 
     input:checked + label {
       text-decoration: line-through;
       color: #ccc;
+    }
+
+    button {
+        background: none;
+        color: #fff;
+        border: none;
+        padding: 7px;
+      img {
+        fill: #cccccc;
+      }
     }
   }
 }
